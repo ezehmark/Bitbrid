@@ -1,3 +1,4 @@
+"use client";
 import { useState, useEffect, useRef, useCallback } from "react";
 import "./home.css";
 import "./sampleCoin.css";
@@ -7,7 +8,7 @@ import { loadFull } from "tsparticles";
 import { analytics } from "./firebase.ts";
 import { useNavigate } from "react-router-dom";
 import { logEvent } from "firebase/analytics";
-import FeatureBox from "./featureBox.tsx";
+import FeatureBox from "@/comps/featureBox.tsx";
 
 import { Line } from "react-chartjs-2";
 import {
